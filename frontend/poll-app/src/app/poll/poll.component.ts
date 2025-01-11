@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './poll.component.css'
 })
 export class PollComponent {
+  title : string = 'poll-app';
 
 }
