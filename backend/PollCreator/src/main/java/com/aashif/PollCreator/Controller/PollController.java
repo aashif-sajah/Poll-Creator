@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/polls")
+@CrossOrigin
 public class PollController
 {
     private final PollService pollService;
@@ -44,6 +45,7 @@ public class PollController
     @PostMapping("/vote")
     public void vote(@RequestBody Vote vote)
     {
+        System.out.println(vote.toString());
          pollService.vote(vote.getPollId(),
                 vote.getOptionIndex());
     }

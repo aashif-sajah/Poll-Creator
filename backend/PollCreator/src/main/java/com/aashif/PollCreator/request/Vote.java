@@ -22,4 +22,9 @@ public class Vote
     public void setOptionIndex(int optionIndex) {
         this.optionIndex = optionIndex;
     }
+
+    public String toString()
+    {
+        return "Vote [pollId=" + pollId + ", optionIndex=" + optionIndex + "]";
+    }
 }
